@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muotoiluja</title>
+    <style>
+        caption {
+            caption-side: top;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px;
+            border: 1px solid #666;
+            background-color:#d4f9f2;
+            text-align: left;
+        }
+        th, td {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        th {
+            font-weight: bold;
+        }
+        .week {
+            font-weight: bold;
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML-muotoiluja</h1>
+    <h2>Teksti</h2>
+    <p>
+        HTML:ssä on paljon muotoiluelementtejä. Tekstiä voi esimerkiksi <b>lihavoida</b>
+        (b) tai <strong>vahventaa</strong> (strong). Teksti voi olla <small>pientä</small> (small) tai se voi olla
+        <sub>alaviite</sub> (sub) tai <sup>yläviite</sup> (sup). On myös mahdollista merkitä <ins>lisätty teksti</ins>
+        (ins) ja vastaavasti <del>poistettu teksti</del> (del). Tekstiä voi myös <mark>korostaa</mark> (mark).
+    
+        <i>"Aika hienoa"</i> (i), sanoi tietotekniikan opettaja.
+
+        <em>"Mutta pitää painottaa, että liiat muotoilut vaikeuttavat tekstin lukemista"</em>
+        (em), sanoivat viestinnän opettaja ja erityisopettaja kuin yhdestä suusta.</p>
+        
+        <h2>Taulukko</h2>
+        <table border="1">
+            <caption>Maaliskuu 2026</caption>
+            <colgroup>
+                <col style="background-color:#d4f9f2;"> <!-- Vk -->
+                <col span="7"> <!-- Ma–Pe -->
+            </colgroup>
+            <tr>
+                <th>Vk</th>
+                <th>Ma</th>
+                <th>Ti</th>
+                <th>Ke</th>
+                <th>To</th>
+                <th>Pe</th>
+                <th>La</th>
+                <th>Su</th>
+            </tr>
+            <tr>
+                <td class="week">9</td>
+                <td colspan="6"></td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td class="week">10</td>
+                <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+            </tr>
+
+            <tr>
+                <td class="week">11</td>
+                <td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+            </tr>
+
+            <tr>
+                <td class="week">12</td>
+                <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td>
+            </tr>
+
+            <tr>
+                <td class="week">13</td>
+                <td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td>
+            </tr>
+
+            <tr>
+                <td class="week">14</td>
+                <td>30</td><td>31</td>
+                <td colspan="5"></td>
+            </tr>
+
+        </table>
+</body>
+</html>
